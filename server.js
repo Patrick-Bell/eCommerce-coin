@@ -163,8 +163,8 @@ app.post("/stripe-checkout", async (req, res) => {
             enabled: true
           },
         mode: "payment",
-        success_url: `http://localhost:3000/success.html`,
-        cancel_url: `http://localhost:3000/cancel.html`,
+        success_url: `https://ecommerce-store-hleq.onrender.com/success.html`,
+        cancel_url: `https://ecommerce-store-hleq.onrender.com/cancel.html`,
         billing_address_collection: "required",
         line_items: lineItems, 
     })
